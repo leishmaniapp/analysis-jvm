@@ -1,5 +1,6 @@
 package com.leishmaniapp.analysis.types;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -11,6 +12,7 @@ import java.util.Map;
  * Local analysis results
  */
 @Data
+@AllArgsConstructor
 public class AnalysisResults {
 
     /**

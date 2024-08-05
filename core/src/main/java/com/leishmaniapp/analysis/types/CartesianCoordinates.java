@@ -1,5 +1,6 @@
 package com.leishmaniapp.analysis.types;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.jetbrains.annotations.NotNull;
 
@@ -7,6 +8,7 @@ import org.jetbrains.annotations.NotNull;
  * Two-dimensional pair of coordinates (x, y) in an image
  */
 @Data
+@AllArgsConstructor
 public class CartesianCoordinates {
 
     /**
