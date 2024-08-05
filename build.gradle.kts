@@ -5,7 +5,7 @@ plugins {
 
 allprojects {
     group = "com.leishmaniapp.analysis"
-    version = "1.0.2-beta"
+    version = "0.1.0-beta"
 }
 
 subprojects {
@@ -15,11 +15,14 @@ subprojects {
     java {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+
+        withSourcesJar()
+        withJavadocJar()
     }
 
     publishing {
         publications {
-            create<MavenPublication>("release") {
+            create<MavenPublication>("maven") {
                 from(components.findByName("java"))
                 version = project.version.toString()
                 group = project.group

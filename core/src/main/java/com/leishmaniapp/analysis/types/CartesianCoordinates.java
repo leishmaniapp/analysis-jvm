@@ -8,9 +8,21 @@ import org.jetbrains.annotations.NotNull;
  */
 @Data
 public class CartesianCoordinates {
+
+    /**
+     * Private default constructor
+     */
+    private CartesianCoordinates() {}
+
+    /**
+     * X coordinate, in pixels
+     */
     @NotNull
     Integer x;
-    
+
+    /**
+     * Y coordinate, in pixels
+     */
     @NotNull
     Integer y;
 }

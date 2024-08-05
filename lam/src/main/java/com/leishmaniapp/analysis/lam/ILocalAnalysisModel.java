@@ -29,7 +29,10 @@ public interface ILocalAnalysisModel {
     void load() throws LamException;
 
     /**
+     * Analyze a given diagnostic image sample file
+     *
      * @param content File with image to be analyzed
+     * @throws LamException The model was not loaded or failed to analyze the image
      * @return A map in which the key represent a diagnostic element and the list of coordinates were it was found
      */
     @NotNull

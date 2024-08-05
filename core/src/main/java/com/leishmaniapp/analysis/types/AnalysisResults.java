@@ -14,6 +14,12 @@ import java.util.Map;
 public class AnalysisResults {
 
     /**
+     * Private default constructor
+     */
+    private AnalysisResults() {
+    }
+
+    /**
      * Model/Diasease ID for the Disease
      */
     @NotNull
