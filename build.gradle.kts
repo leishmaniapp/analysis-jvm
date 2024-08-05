@@ -5,7 +5,7 @@ plugins {
 
 allprojects {
     group = "com.leishmaniapp.analysis"
-    version = "0.1.0-beta"
+    version = "1.0.0"
 }
 
 subprojects {
