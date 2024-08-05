@@ -1,5 +1,6 @@
 package com.leishmaniapp.analysis.types;
 
+import lombok.Data;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -8,14 +9,25 @@ import java.util.Map;
 
 /**
  * Local analysis results
- *
- * @param model   Model/Diasease ID for the Disease
- * @param status  Success or failure code
- * @param results A map in which the key represent a diagnostic element and the list of coordinates were it was found
  */
-public record AnalysisResults(
-        @NotNull String model,
-        @NotNull AnalysisStatus status,
-        @Nullable Map<String, List<CartesianCoordinates>> results
-) {
+@Data
+public class AnalysisResults {
+
+    /**
+     * Model/Diasease ID for the Disease
+     */
+    @NotNull
+    String model;
+
+    /**
+     * Success or failure code
+     */
+    @NotNull
+    AnalysisStatus status;
+
+    /**
+     * A map in which the key represent a diagnostic element and the list of coordinates were it was found
+     */
+    @Nullable
+    Map<String, List<CartesianCoordinates>> results;
 }

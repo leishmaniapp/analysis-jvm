@@ -10,8 +10,8 @@ allprojects {
 
 subprojects {
     java {
-        setSourceCompatibility(JavaVersion.VERSION_14)
-        setTargetCompatibility(JavaVersion.VERSION_14)
+        setSourceCompatibility(JavaVersion.VERSION_1_8)
+        setTargetCompatibility(JavaVersion.VERSION_1_8)
     }
 
 
