@@ -1,0 +1,27 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+allprojects {
+    group = 'com.leishmaniapp.analysis'
+    version = '1.0.0-beta'
+}
+
+subprojects {
+    java {
+        setSourceCompatibility(JavaVersion.VERSION_14)
+        setTargetCompatibility(JavaVersion.VERSION_14)
+    }
+
+
+    publishing {
+        publications {
+            maven(MavenPublication) {
+                groupId project.group
+                artifactId project.name
+                version project.version
+            }
+        }
+    }
+}

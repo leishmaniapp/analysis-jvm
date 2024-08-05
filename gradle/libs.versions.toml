@@ -1,0 +1,9 @@
+[versions]
+jetbrains-annotations = "24.0.0"
+
+[plugins]
+
+[libraries]
+jetbrains-annotations = { group = "org.jetbrains", name = "annotations", version.ref = "jetbrains-annotations" }
+
+[bundles]
