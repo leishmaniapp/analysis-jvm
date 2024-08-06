@@ -42,7 +42,7 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            create<MavenPublication>("release") {
+            create<MavenPublication>("maven") {
                 from(components.findByName("release"))
                 version = project.version.toString()
                 group = project.group

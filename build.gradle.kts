@@ -8,5 +8,17 @@ plugins {
 
 allprojects {
     group = "com.leishmaniapp.analysis"
-    version = "1.1.1"
+    version = "1.1.0"
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                version = project.version.toString()
+                group = project.group
+                artifactId = project.name
+            }
+        }
+    }
 }

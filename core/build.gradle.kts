@@ -19,7 +19,7 @@ java {
 
 publishing {
     publications {
-        create<MavenPublication>("release") {
+        create<MavenPublication>("maven") {
             from(components.findByName("java"))
             version = project.version.toString()
             group = project.group
