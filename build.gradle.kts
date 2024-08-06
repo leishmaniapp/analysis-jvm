@@ -8,7 +8,7 @@ plugins {
 
 allprojects {
     group = "com.leishmaniapp.analysis"
-    version = "1.1.0"
+    version = "0.1.0-beta"
 }
 
 afterEvaluate {
