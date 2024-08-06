@@ -18,24 +18,24 @@ public class AnalysisResults {
     /**
      * Private default constructor
      */
-    private AnalysisResults() {
+    protected AnalysisResults() {
     }
 
     /**
      * Model/Diasease ID for the Disease
      */
     @NotNull
-    String model;
+    protected String model;
 
     /**
      * Success or failure code
      */
     @NotNull
-    AnalysisStatus status;
+    protected AnalysisStatus status;
 
     /**
      * A map in which the key represent a diagnostic element and the list of coordinates were it was found
      */
     @Nullable
-    Map<String, List<CartesianCoordinates>> results;
+    protected Map<String, List<CartesianCoordinates>> results;
 }
