@@ -1,7 +1,7 @@
 package com.leishmaniapp.analysis.lam;
 
 import com.leishmaniapp.analysis.lam.exception.LamException;
-import com.leishmaniapp.analysis.types.CartesianCoordinates;
+import com.leishmaniapp.analysis.core.CartesianCoordinates;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.File;

@@ -1,4 +1,4 @@
-package com.leishmaniapp.analysis.types;
+package com.leishmaniapp.analysis.core;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

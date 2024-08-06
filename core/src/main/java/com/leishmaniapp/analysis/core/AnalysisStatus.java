@@ -1,4 +1,4 @@
-package com.leishmaniapp.analysis.types;
+package com.leishmaniapp.analysis.core;
 
 /**
  * Specifies the status response from the analysis service
