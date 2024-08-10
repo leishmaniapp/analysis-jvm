@@ -12,6 +12,7 @@ Implementing a LAM in Android requires creating an application with the followin
 * Contains a [*Bound Service*](https://developer.android.com/develop/background-work/services/bound-services) which is the class responsible for the analysis requests and replies and interacts with the concrete _com.leishmaniapp.analysis.lam.**ILocalAnalysisModel**_ implementation
 * The service must be **exported** and contain the '_com.leishmaniapp.lam.ACTION_ANALYZE_' action
 * The service must require '_com.leishmaniapp.lam.BIND_PERMISSION_' permission
+* Both [**Leishmaniapp**](https://github.com/leishmaniapp/leishmaniapp-android) and the LAM module must be signed using the same developer signature
 
 This is an XML example of the AndroidManifest.xml definition of the service
 ```xml
