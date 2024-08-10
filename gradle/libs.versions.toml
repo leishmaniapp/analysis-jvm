@@ -3,6 +3,7 @@ agp = "8.4.2"
 kotlin = "2.0.0"
 lombok = "1.18.34"
 jetbrains-annotations = "24.0.0"
+core-ktx = "1.13.1"
 
 [plugins]
 android-library = { id = "com.android.library", version.ref = "agp" }
@@ -10,6 +11,7 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
 
 [libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombok" }
 jetbrains-annotations = { group = "org.jetbrains", name = "annotations", version.ref = "jetbrains-annotations" }
 

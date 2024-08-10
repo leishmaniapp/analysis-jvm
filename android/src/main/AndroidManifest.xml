@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- This permission is required to bind a LAM service, to use it make sure that both the application
+    and the LAM module are signed with the same developer signature -->
+    <permission
+        android:name="com.leishmaniapp.lam.BIND_PERMISSION"
+        android:protectionLevel="signature" />
 
 </manifest>

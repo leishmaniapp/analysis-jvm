@@ -1,4 +1,4 @@
-package com.leishmaniapp.analysis.lam.service
+package com.leishmaniapp.analysis.lam
 
 import android.app.Service
 import android.os.Messenger
@@ -27,4 +27,6 @@ data class LamAnalysisResponse(
      */
     val results: AnalysisResultsParcel,
 
-    ) : Parcelable
+    ) : Parcelable {
+    companion object
+}

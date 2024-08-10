@@ -1,4 +1,4 @@
-package com.leishmaniapp.analysis.lam.service
+package com.leishmaniapp.analysis.lam
 
 import android.app.Service
 import android.net.Uri
@@ -28,4 +28,6 @@ data class LamAnalysisRequest(
      */
     val uri: Uri,
 
-    ) : Parcelable
+    ) : Parcelable {
+    companion object
+}
