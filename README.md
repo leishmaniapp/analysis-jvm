@@ -1,10 +1,24 @@
 # Leishmaniapp Analysis Tools for the JVM
 This repository provides the tools needed for creating Leishmaniapp compatible dynamically-loaded analysis modules
 
+This library is availabe on [JitPack](https://jitpack.io/)\
+[![](https://jitpack.io/v/leishmaniapp/analysis-jvm.svg)](https://jitpack.io/#leishmaniapp/analysis-jvm)
+
 ## 🧩 Local Analysis Model (LAM)
 LAM is an interface _(com.leishmaniapp.analysis.lam.**ILocalAnalysisModel**)_ for defining local (non-cloud) analysis classes that can be dynamically loaded into the JVM or implemented within an Android application
 
 ### Android LAM
+
+Include Android LAM in your project with the following dependencies ([JitPack](https://jitpack.io/) required) :
+```kt
+dependencies {
+	// analysis-jvm Core library
+	implementation("com.github.leishmaniapp.analysis-jvm:core:<version>")
+	// Android libraries for LAM
+	implementation("com.github.leishmaniapp.analysis-jvm:android:<version>")
+}
+```
+
 Implementing a LAM in Android requires creating an application with the following requirements:
 
 * The package name must be '_com.leishmaniapp.lam.*<disease>*_' where _<disease>_ is the disease/model ID (ej. leishmaniasis.giemsa)
