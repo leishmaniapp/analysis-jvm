@@ -37,5 +37,5 @@ public class AnalysisResults {
      * A map in which the key represent a diagnostic element and the list of coordinates were it was found
      */
     @Nullable
-    protected Map<String, List<CartesianCoordinates>> results;
+    protected Map<String, List<BoxCoordinates>> results;
 }

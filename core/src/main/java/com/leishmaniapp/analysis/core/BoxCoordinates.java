@@ -6,16 +6,16 @@ import lombok.Data;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Two-dimensional pair of coordinates (x, y) in an image
+ * Bounding box coordinates and dimentions
  */
 @Data
 @AllArgsConstructor
-public class CartesianCoordinates {
+public class BoxCoordinates {
 
     /**
      * Private default constructor
      */
-    protected CartesianCoordinates() {
+    protected BoxCoordinates() {
     }
 
     /**
@@ -29,4 +29,16 @@ public class CartesianCoordinates {
      */
     @NotNull
     protected Integer y;
+
+    /**
+     * Box width, in pixels
+     */
+    @NotNull
+    protected Integer w;
+
+    /**
+     * Box height, in pixels
+     */
+    @NotNull
+    protected Integer h;
 }

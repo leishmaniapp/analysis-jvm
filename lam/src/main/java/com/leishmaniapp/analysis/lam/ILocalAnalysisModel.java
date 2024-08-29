@@ -1,7 +1,7 @@
 package com.leishmaniapp.analysis.lam;
 
 import com.leishmaniapp.analysis.lam.exception.LamException;
-import com.leishmaniapp.analysis.core.CartesianCoordinates;
+import com.leishmaniapp.analysis.core.BoxCoordinates;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
@@ -33,8 +33,8 @@ public interface ILocalAnalysisModel {
      *
      * @param content File with image to be analyzed
      * @throws LamException The model was not loaded or failed to analyze the image
-     * @return A map in which the key represent a diagnostic element and the list of coordinates were it was found
+     * @return A map in which the key represent a diagnostic element and the list of box coordinates were it was found
      */
     @NotNull
-    Map<String, List<CartesianCoordinates>> analyze(@NotNull File content) throws LamException;
+    Map<String, List<BoxCoordinates>> analyze(@NotNull File content) throws LamException;
 }
