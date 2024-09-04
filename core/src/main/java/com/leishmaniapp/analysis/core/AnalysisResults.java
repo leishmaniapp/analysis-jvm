@@ -28,6 +28,12 @@ public class AnalysisResults {
     protected String model;
 
     /**
+     * Model version
+     */
+    @NotNull
+    protected String version;
+
+    /**
      * Success or failure code
      */
     @NotNull

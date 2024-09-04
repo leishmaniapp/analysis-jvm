@@ -9,8 +9,9 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class AnalysisResultsParcel(
     @get:JvmName("getModelKt") val model: String,
+    @get:JvmName("getVersionKt") val version: String,
     @get:JvmName("getStatusKt") val status: AnalysisStatus,
     @get:JvmName("getResultsKt") val results: Map<String, List<BoxCoordinatesParcel>>?
 ) :
-    AnalysisResults(model, status, results),
+    AnalysisResults(model, version, status, results),
     Parcelable
